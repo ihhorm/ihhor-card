@@ -43,8 +43,8 @@
    ```
 
 ## Публікація через HACS
-- У репозиторії присутній `hacs.json` (filename: `ihhor-card.js`).
-- Для ручного тесту як custom repo: додайте репозиторій у HACS, завантажте `dist/ihhor-card.js`, а Lovelace ресурс вкажіть на `/local/ihhor-card/ihhor-card.js`.
+- У репозиторії присутній `hacs.json` (filename: `dist/ihhor-card.js`).
+- Для ручного тесту як custom repo: додайте репозиторій у HACS, завантажте, переконайтеся, що у директорії `www/community/ihhor-card/` є `dist/ihhor-card.js`, а Lovelace ресурс вкажіть на `/hacsfiles/ihhor-card/dist/ihhor-card.js` (або `/local/community/ihhor-card/dist/ihhor-card.js`).
 
 ## Структура
 - `src/ihhor-card.ts` — основна картка (LitElement).

@@ -14,6 +14,7 @@ export default defineConfig({
     },
     cssCodeSplit: false,
     rollupOptions: {
+      external: [],
       output: {
         format: "es",
         inlineDynamicImports: true,

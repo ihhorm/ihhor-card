@@ -16,7 +16,7 @@
 3. Збірка: `npm run build` → артефакт `dist/ihhor-card.js` + sourcemap.
 
 ## Використання в Home Assistant
-1. Покладіть `dist/ihhor-card.js` у `config/www/ihhor-card/`.
+1. Покладіть `ihhor-card.js` у `config/www/ihhor-card/` (або просто в `www/community/ihhor-card/` якщо використовуєте HACS).
 2. Додайте ресурс у Lovelace (UI або `configuration.yaml`):
    ```yaml
    lovelace:
@@ -43,8 +43,8 @@
    ```
 
 ## Публікація через HACS
-- У репозиторії присутній `hacs.json` (filename: `dist/ihhor-card.js`).
-- Для ручного тесту як custom repo: додайте репозиторій у HACS, завантажте, переконайтеся, що у директорії `www/community/ihhor-card/` є `dist/ihhor-card.js`, а Lovelace ресурс вкажіть на `/hacsfiles/ihhor-card/dist/ihhor-card.js` (або `/local/community/ihhor-card/dist/ihhor-card.js`).
+- У репозиторії присутній `hacs.json` (filename: `ihhor-card.js`).
+- Для ручного тесту як custom repo: додайте репозиторій у HACS, встановіть, і переконайтеся, що у `www/community/ihhor-card/` з’явився `ihhor-card.js`. Ресурс у Lovelace вкажіть на `/hacsfiles/ihhor-card/ihhor-card.js` (або `/local/community/ihhor-card/ihhor-card.js`).
 
 ## Структура
 - `src/ihhor-card.ts` — основна картка (LitElement).

@@ -1,11 +1,11 @@
 {
   "name": "ihhor-card",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Custom Lovelace thermostat card (Ihhor Card) with HACS metadata and preview.",
   "scripts": {
     "dev": "vite dev --clearScreen false",
-    "build": "vite build",
+    "build": "vite build && cp dist/ihhor-card.js ihhor-card.js",
     "preview": "vite preview"
   },
   "dependencies": {
